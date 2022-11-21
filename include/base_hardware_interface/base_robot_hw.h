@@ -93,6 +93,9 @@ protected:
     std::vector<double>	imu_ang_vel_;
     std::vector<double>	imu_lin_acc_;
 
+
+    std::vector<double>	imu_euler_;
+
     std::vector<std::string> leg_name_;
     std::vector<std::vector<double> > force_;
     std::vector<std::vector<double> > torque_;

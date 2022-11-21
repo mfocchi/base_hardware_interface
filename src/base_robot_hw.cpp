@@ -67,6 +67,11 @@ void WolfRobotHwInterface::initializeImuInterface(const std::string& imu_link_na
     imu_orientation_.resize(4);
     imu_ang_vel_.resize(3);
     imu_lin_acc_.resize(3);
+    imu_euler_.resize(3);
+    
+    imu_euler_[0] = 0.0;
+    imu_euler_[1] = 0.0;
+    imu_euler_[2] = 0.0;
 
     imu_data_.name = "imu";
     imu_data_.frame_id = imu_link_name;
